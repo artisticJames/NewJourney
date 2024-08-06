@@ -1,0 +1,19 @@
+using System;
+
+class program
+{
+    public static void Main(string[] args)
+    {
+        string name = "james";
+        string lastname = "Apa-ap";
+        int age = 20;
+        string country = "Philipines";
+        
+        
+        Console.WriteLine ($"Name: {name}");
+        Console.WriteLine ($"Lastname: {lastname}");
+        Console.WriteLine ($"Age: {age}");
+        Console.WriteLine ($"Country: {country}");
+        
+    }
+}
