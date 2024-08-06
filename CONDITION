@@ -1,0 +1,49 @@
+class program
+
+{
+    public static void Main(string[] args)
+    {
+        int answer;
+
+        Console.WriteLine("15 + 2 * 2 = ");
+
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 60)
+        {
+            Console.WriteLine("your answer is correct");
+        }
+        else
+        {
+            Console.WriteLine("your answer is wrong");
+        }
+
+        Console.WriteLine("10 * 2 / 4 = ");
+
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 5)
+        {
+            Console.WriteLine("your answer is correct");
+        }
+        else
+        {
+            Console.WriteLine("your answer is wrong");
+        }
+
+        Console.WriteLine("4 + 4 + 2 ) / 2 = ");
+
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 10)
+        {
+            Console.WriteLine("your answer is correct");
+        }
+        else
+        {
+            Console.WriteLine("your answer is wrong");
+        }
+
+        Console.ReadKey();
+    }
+}
