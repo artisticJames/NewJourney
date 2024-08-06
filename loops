@@ -1,0 +1,49 @@
+class program
+
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("how many cool numbers would you want");
+
+        int count = Convert.ToInt32(Console.ReadLine()); 
+
+        for (int i = 0; i <= count; i++)
+        {
+            double result = Math.Pow(2, i);
+            Console.WriteLine(result);
+        }
+    }
+}
+
+
+
+
+class program
+
+{
+    public static void Main(string[] args)
+    {
+       
+        Random numberGen = new Random();
+
+        int roll1 = 0;
+        int roll2 = 1;
+        int attempt = 0;
+
+        Console.WriteLine("Press enter to roll a dice");
+
+        while (roll1 != roll2)  
+        {
+            Console.ReadKey();
+
+            roll1 = numberGen.Next(1, 7);
+            roll2 = numberGen.Next(1, 7);
+            Console.WriteLine("roll1: " + roll1);
+            Console.WriteLine("roll2: " + roll2 + "\n");
+            attempt++;
+        }
+        Console.WriteLine("it took you " + attempt + " attempts to roll a six ");
+
+        Console.ReadKey();
+        }
+    }
