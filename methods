@@ -1,0 +1,23 @@
+
+class Program
+
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Write a sentence: ");
+
+        string Sentence = Console.ReadLine();
+
+        int wordcount = wordscount(Sentence);
+
+        Console.WriteLine("there are " + wordcount + " words in that sentence");
+
+        static int wordscount(string Sentence)
+        {
+            int wordcount = Sentence.Split(' ').Length; 
+            return wordcount;
+        }
+
+        Console.ReadKey();
+    }
+}
