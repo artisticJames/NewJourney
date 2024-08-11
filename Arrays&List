@@ -1,0 +1,107 @@
+class program
+
+{
+    public static void Main(string[] args)
+    {
+        string[] movies = { "League", "Valorant", "roblox", "dredge", "minecraft" };
+
+        for (int i = 0; i < movies.Length; i++)
+        {
+            int rank = i + 1;
+            Console.WriteLine(rank + ", " + movies[i] );
+        }
+
+
+        Console.ReadKey();
+    }
+}
+
+
+
+
+
+Populate array!!
+class program
+
+{
+    public static void Main(string[] args)
+    {
+        string[] movies = new string[5];
+
+        Console.WriteLine("Type your Favorite Games");
+
+        movies[0] = Console.ReadLine();
+        movies[1] = Console.ReadLine();
+        movies[2] = Console.ReadLine();
+        movies[3] = Console.ReadLine();
+        movies[4] = Console.ReadLine();
+
+        Console.ReadKey();
+    }
+}
+
+
+
+
+populate array and sorthing them alphabitically!!
+class program
+
+{
+    public static void Main(string[] args)
+    {
+        string[] movies = new string[5];
+
+        Console.WriteLine("Type your Favorite Games");
+
+        for (int i = 0; i < movies.Length; i++) 
+        {
+            movies[i] = Console.ReadLine();
+        } 
+
+        Console.WriteLine("\n here they are alphabitically");
+
+        Array.Sort(movies);
+
+        for (int i = 0; i < movies.Length; i++)
+        {
+            Console.WriteLine(movies[i]);
+        }
+
+        Console.ReadKey();
+    }
+}
+
+
+List
+class Program
+
+{
+     public static void Main(string[] args)
+    {
+        List<string> Shoppinglist = new List<string>();
+
+        Shoppinglist.Add("eggs");
+        Shoppinglist.Add("rice");
+        Shoppinglist.Add("meat");
+        Shoppinglist.Add("bread");
+        Shoppinglist.Add("soda");
+
+        for (int i = 0; i < Shoppinglist.Count; i++)
+        {
+            Console.WriteLine(Shoppinglist[i]);
+        }
+
+        Shoppinglist.Remove("eggs");
+        Shoppinglist.RemoveAt(1);
+        
+
+        Console.WriteLine("-----------------------");
+
+        for (int i = 0; i < Shoppinglist.Count; i++)
+        {
+            Console.WriteLine(Shoppinglist[i]);
+        }
+
+        Console.ReadKey();
+    }
+}
