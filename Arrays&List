@@ -105,3 +105,39 @@ class Program
         Console.ReadKey();
     }
 }
+
+
+
+
+class Program
+
+{
+     public static void Main(string[] args)
+    {
+        List<string> Teacherlist = new List<string>();
+        {
+            Console.WriteLine("input your student in class (if not press enter to to finish)");
+
+            while (true)
+            {
+                string input = Console.ReadLine();
+                if (string.IsNullOrEmpty(input))
+                {
+                    break;
+                }
+                Teacherlist.Add(input);
+            }
+
+            Teacherlist.Sort();
+
+            Console.WriteLine("\n Here they are alphabitically");
+
+            foreach (string student in Teacherlist)
+            {
+                Console.WriteLine(student);
+            }
+
+        }
+        Console.ReadKey();
+    }
+}
