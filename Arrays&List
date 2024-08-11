@@ -141,3 +141,36 @@ class Program
         Console.ReadKey();
     }
 }
+
+
+
+class Program
+
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("input the number of student in class: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+
+        List<string> teacherlist = new List<string>();
+
+        Console.WriteLine("write names: ");
+
+        for (int i = 0; i < number; i++)
+        {
+            Console.Write(i+1 + ". ");
+            teacherlist.Add(Console.ReadLine());
+        }
+
+        teacherlist.Sort();
+        Console.WriteLine("\n alphabitically");
+
+        for (int n = 0; n < teacherlist.Count; n++)
+        {
+            Console.Write(n+1 + ". ");
+            Console.WriteLine(teacherlist[n]);
+        }
+
+        Console.ReadKey();
+    }
+}
